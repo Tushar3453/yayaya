@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+
+    <style>
+        *{
+            list-style: none;
+            margin:0;
+            font-family: 'Montserrat';
+        }
+
+        body{
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            position: relative;
+            width: 700px;
+            height: 600px;
+            background-color: #0000000e;
+            border: 1px solid #bbb;
+            border-top: none;
+            border-right: none;
+            margin-top: 100px;
+            z-index: 0;
+        }
+
+        .v-meter{
+            position: relative;
+            top: 0px;
+            left: -30px;
+            width: 700px;
+            height: 500px;
+            z-index: 100;
+        }
+
+        .v-meter li{
+            position: relative;
+            left: -11px;
+            height: 100px;
+            border-bottom: solid 1px#1785a7;
+
+        }
+
+        .v-meter li::before{
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: -30px;
+            height: 100%;
+            border-bottom: solid 1px #1785a7;
+            transform: skewY(45deg);
+            width: 30px;
+            
+        }
+
+        .v-meter li div{
+            position: absolute;
+            width: 80px;
+            font-size: 16px;
+            left: -115px;
+            padding-top: 55px;
+            color: #fff;
+            text-align: right;
+        }
+
+
+        .bar{
+            width: 50px;
+            height: 32%;
+            background-color: rgb(147,26,184);
+            position: absolute;
+            left: 10%;
+            bottom: 5px;
+            z-index: 1000;
+            margin: 0 40px;
+            /* border: 2px solid #fff; */
+            box-shadow: 0px 0px 5px #ffffff;
+        }
+        .bar:hover{
+            background-color: rgb(174,125,196);
+        }
+
+        .bar::after{
+            content: '';
+            width: 50px;
+            height: 20px;
+            background-color: rgb(147,26,184);
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            transform: skewX(45deg);
+            box-shadow: 0px 0px 5px #ffffff;
+        }
+
+        .bar:hover:after{
+            background-color: rgb(174,125,196);
+        }
+
+        .bar::before{
+            content: '';
+            width: 20px;
+            height: 100%;
+            background-color: rgb(147,26,184);
+            position: absolute;
+            left: -20px;
+            top: -10px;
+            bottom: 5px;
+            transform: skewY(45deg);
+            box-shadow: 0px 0px 5px #ffffff;
+        }
+
+        .bar:hover:before{
+            background-color: rgb(174,125,196);
+        }
+
+        .two {
+            left: 25%;
+            height: 55%;
+        }
+        
+
+        .three {
+            left:40%;
+            height:70%;
+        }
+
+        .four{
+            left: 55%;
+            height: 45%;
+        }
+
+        .five{
+            left: 70%;
+            height: 79%;
+        }
+
+        .key{
+            background-color: rgb(147,26,184);
+            width: 10px;
+            height: 10px;
+            margin-left: 111px;
+            border: 1px solid #fff;
+        }
+        .p{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leaderboard For 2022</h1>
+        <div class="bar one">Week
+            <br>
+            2-12
+
+        </div>
+        <div class="bar two">Week
+            <br>
+            13-22
+
+        </div>
+        <div class="bar three">Week
+            <br>
+            23-32
+
+        </div>
+        <div class="bar four">Week
+            <br>
+            33-42
+
+        </div>
+        <div class="bar five">Week
+            <br>
+            43-52
+
+        </div>
+
+        <ul class="v-meter">
+            <li><div>20k</div></li>
+            <li><div>15k</div></li>
+            <li><div>10k</div></li>
+            <li><div>5k</div></li>
+            <li><div>1k</div></li>
+        </ul>
+
+
+    </div>
+    <div class="key"> </div> 
+    <div class="p">......reach in mentioned week </div>
+    
+</body>
+</html>

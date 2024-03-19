@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message page</title>
+    <style>
+    
+        body {
+            /* background-color: #333; */
+            background:url(picc.jpg)no-repeat ;
+            background-size:cover;
+            background-position:center;
+            color: azure;
+            /* text-shadow: 7px 7px 8px; */
+        }
+    
+        input[type=text],textarea {
+            width:100%;
+            padding:12px;
+            border:none;
+            margin-top:5px;
+            margin-bottom:15px;
+            outline: none;
+            border-radius: 10px;
+            box-shadow: 5px 6px 5px  rgba(0,0,0,0.2);
+        }
+    
+        input[type=submit] {
+            background-color: white; 
+            color: black;
+            padding:15px 32px;
+            border: none;
+            margin-left: 638px;
+            
+        }
+    
+        input[type=submit]:hover {
+            background-color: rgb(152, 216, 241); 
+            color: white;
+        }
+    
+        .container {
+            border-radius:5px;
+            font-size:20px;
+    
+        }
+    
+        .column {
+            float:center;
+            text-align: left;
+            width:50%;
+            margin-top:6px;
+            padding:20px;
+            margin-left:350px;
+        }
+    
+        .heading {
+            margin-top:50px;
+        }
+    
+        h1{
+            font-size:50px;
+        }
+    
+        p{
+            font-size:25px;
+        }
+    
+        
+    </style>
+    
+    <div class="container">
+        <div class="heading" style="text-align:center">
+            <h1>Looking to message someone? </h1>
+            <p>This is the right place for that!</p>
+            <br> 
+        </div>
+        <div class="column" >
+            <label for="to">To:</label>
+            <input type="text" id="to" name="To:">
+                <br> <br> <br>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject"
+                style="height:170px">
+            </textarea>
+            <a onclick="window.close()">
+                <input type="submit" value="SUBMIT">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help page</title>
+    <style>
+    
+        body{
+            background-color:  #333;
+            color:white;
+        }
+    
+        input[type=text],select,textarea {
+            width:100%;
+            padding:12px;
+            border:1px solid black;
+            margin-top:7px;
+            margin-bottom:15px;
+            outline: none;
+        }
+    
+        input[type=submit] {
+            background-color: white; 
+            color: black;
+            padding:15px 32px;
+            border: none;
+            margin-left: 1016px;
+            
+        }
+    
+        input[type=submit]:hover {
+            background-color: rgb(152, 216, 241); 
+            color: white;
+        }
+    
+        .container {
+            border-radius:5px;
+            
+            
+        }
+    
+        .column {
+            float:center;
+            width:50%;
+            margin-top:6px;
+            padding:20px;
+            margin-left:360px;
+        }
+    
+        .heading {
+            margin-top:50px;
+        }
+    
+        h1 {
+            font-size:50px;
+        }
+    
+        .row {
+            font-size:20px;
+        }
+    
+        
+    </style>
+    
+    <div class="container">
+        <div class="heading" style="text-align: center;">
+            <h1>Contact Us </h1>
+            <h4>Call us at 9056403147   or     Leave us a message:</h4>
+        </div>
+        
+        <div class="row">
+            <div class="image">
+                <img src="https://www.ncsc.gov.uk/images/social-icons.jpg"
+                 style="height:500px;width:800px;margin-left:360px;">
+            </div>
+            <div class="column" >
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname">
+        
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="India">India</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+        
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject"
+                  style="height:170px">
+                </textarea>
+                
+            </div>
+                <a href="" onclick="window.close()">
+                    <input type="submit" value="SUBMIT">
+                </a>
+        </div>
+    </div>
+</body>
+</html>
